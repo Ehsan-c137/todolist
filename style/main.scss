@@ -1,0 +1,146 @@
+@import "__reset";
+
+@mixin btn {
+   padding: 1.2rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+   border: none;
+   border-radius: 7px;
+   background-color: white;
+   transition: 0.5s all;
+}
+
+body {
+   background-color: #6fc0da;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%236FC0DA'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+   background-attachment: fixed;
+   background-size: cover;
+
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3.2rem;
+   padding-top: 3.2rem;
+   transition: 0.5s all;
+}
+header {
+   color: white;
+}
+.main-container {
+   background-color: $primary-blue;
+   padding: 4.8rem;
+   margin: 1.8rem;
+   border-radius: 7px;
+}
+
+form {
+   display: flex;
+   justify-content: center;
+   gap: 3.2rem;
+}
+.input-container {
+   max-width: 50rem;
+   &:focus-within {
+      outline: 2px solid #4fed8e;
+   }
+   background-color: white;
+   padding: 1.2rem 1.8rem;
+   border-radius: 7px;
+   transition: 0.5s all;
+}
+.main-input {
+   background-color: white;
+
+   outline: none;
+   border: none;
+   font-size: 2.4rem;
+}
+
+.add-todo-btn {
+   background-color: $primary-green;
+   color: black;
+   padding: 1.2rem 2.4rem;
+   box-shadow: 0px 2px 5px 1px #69ec4f;
+
+   border: none;
+   border-radius: 7px;
+
+   letter-spacing: 1px;
+   transition: 0.5s all;
+   &:hover {
+      background-color: #69c564;
+      color: white;
+      box-shadow: none;
+   }
+   &:active {
+      background-color: #b458a4;
+      color: white;
+      transform: translateY(1px);
+   }
+}
+
+.todos-container {
+   margin-top: 3.2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+.task {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 6.4rem;
+   max-width: 90vw;
+   padding: 1.2rem;
+   border-radius: 7px;
+   font-size: 1.2rem;
+   background-color: whitesmoke;
+   color: black;
+}
+.task-text {
+   display: flex;
+
+   flex-direction: column;
+   font-size: 2.4rem;
+   white-space: normal;
+   word-break: break-all;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   hyphens: auto;
+}
+
+.btn {
+   display: flex;
+   gap: 1.2rem;
+}
+.edit-btn {
+   @include btn;
+   &:hover {
+      background-color: #64adc4;
+   }
+   background-color: $primary-blue;
+   color: white;
+}
+.delete-btn {
+   &:hover {
+      background-color: #c46492;
+   }
+   @include btn;
+   background-color: $primary-pink;
+   color: white;
+}
+
+.edit-input {
+   width: 100%;
+   padding: 1rem;
+   border: none;
+   border-bottom: 1px solid $primary-blue;
+   outline: none;
+   font-size: 2.4rem;
+   background-color: transparent;
+}
+.text-wrapper {
+   overflow-wrap: break-word;
+}
+@import "__queries";

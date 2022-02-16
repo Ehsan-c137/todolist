@@ -1,0 +1,23 @@
+// below 560px
+@media (max-width: 35em) {
+   html {
+      font-size: 59%;
+   }
+}
+
+// below 528
+@media (max-width: 33em) {
+   html {
+      font-size: 50%;
+   }
+   .main-container {
+      padding: 2.8rem;
+   }
+}
+
+// below 416
+@media (max-width: 26em) {
+   .form {
+      flex-direction: column;
+   }
+}
