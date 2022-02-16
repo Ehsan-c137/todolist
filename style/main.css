@@ -230,5 +230,8 @@ form {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .task-text {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
