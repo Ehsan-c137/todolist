@@ -78,7 +78,7 @@ form {
 }
 
 .add-todo-btn {
-  background-color: #4fed8e;
+  background-color: #2cff9c;
   color: black;
   padding: 1.2rem 2.4rem;
   -webkit-box-shadow: 0px 2px 5px 1px #69ec4f;
@@ -186,7 +186,7 @@ form {
   background-color: white;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  background-color: #da6fa2;
+  background-color: #ff2c8f;
   color: white;
 }
 
